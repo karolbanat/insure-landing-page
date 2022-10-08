@@ -1,21 +1,62 @@
+@use 'sass:map';
 $breakpoints: (
-	small: 38em,
-	medium: 50em,
+	small: 36em,
+	medium: 48em,
 	large: 62em,
 );
 
-$colors: ();
-
-$font-sizes: (
-	small: (),
-	medium: (),
+$colors: (
+	primary: (
+		400: hsl(216 30% 68%),
+		700: hsl(256 26% 20%),
+	),
+	neutral: (
+		100: hsl(0 0% 100%),
+		200: hsl(0 0% 98%),
+		400: hsl(273 4% 51%),
+		700: hsl(270 9% 17%),
+	),
 );
 
-$font-weights: ();
+$font-sizes: (
+	small: (
+		300: 1.3rem,
+		400: 1.6rem,
+		500: 2.8rem,
+		600: 4rem,
+		700: 4.8rem,
+		nav-link: 2rem,
+	),
+	medium: (
+		600: 4.8rem,
+		700: 7.2rem,
+		nav-link: 1.3rem,
+	),
+);
 
-$border-radius: ();
+$font-weights: (
+	400: 400,
+	700: 700,
+);
 
-$spacings: (
-	em: (),
-	rem: (),
+$spacers: (
+	em: (
+		300: 1em,
+		400: 1.25em,
+		500: 1.66em,
+		600: 2.25em,
+	),
+	rem: (
+		100: 1.6rem,
+		150: 2rem,
+		200: 2.4rem,
+		250: 3rem,
+		300: 3.2rem,
+		400: 4rem,
+		500: 4.8rem,
+		600: 5.6rem,
+		700: 6.4rem,
+		800: 7.2rem,
+		900: 8rem,
+	),
 );

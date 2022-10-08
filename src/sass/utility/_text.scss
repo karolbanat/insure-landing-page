@@ -1,0 +1,12 @@
+@use '../abstracts/mixins' as mxn;
+
+.text-neutral-100 {
+	color: var(--clr-neutral-100);
+}
+
+.text-center-sm {
+	text-align: center;
+	@include mxn.mq(medium) {
+		text-align: start;
+	}
+}

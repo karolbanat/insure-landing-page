@@ -10,8 +10,10 @@
 	}
 
 	// font families
+	--ff-primary: 'Karla', sans-serif;
+	--ff-accent: 'DM Serif Display', serif;
 
-	// font wieghts
+	// font weights
 	@each $font-weight, $value in variables.$font-weights {
 		--fw-#{$font-weight}: #{$value};
 	}
@@ -31,15 +33,17 @@
 		}
 	}
 
-	// border radius
-	@each $radius, $value in variables.$border-radius {
-		--borr-#{$radius}: #{$value};
+	// spacers
+	@each $unit, $sizes in variables.$spacers {
+		@each $size, $value in $sizes {
+			--spacer-#{$unit}-#{$size}: #{$value};
+		}
 	}
 
-	// spacings
-	@each $unit, $sizes in variables.$spacings {
-		@each $size, $value in $sizes {
-			--spacing-#{$unit}-#{$size}: #{$value};
-		}
+	--section-block-spacer: 14rem;
+	--footer-block-padding: 8.8rem;
+	@include mixins.mq(medium) {
+		--section-block-spacer: 15rem;
+		--footer-block-padding: 6.4rem;
 	}
 }
