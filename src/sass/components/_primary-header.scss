@@ -3,6 +3,7 @@
 .primary-header {
 	&__intro {
 		position: relative;
+		isolation: isolate;
 		@include mxn.mq(medium) {
 			padding-block-start: 10.5rem;
 			padding-inline: var(--container-padding-inline);
@@ -26,11 +27,56 @@
 	}
 
 	&__text-content {
+		position: relative;
 		padding-inline: var(--container-padding-inline);
 		padding-block: var(--spacer-rem-950);
 		@include mxn.mq(medium) {
 			padding-block: 0;
 			padding-inline: 0;
+		}
+	}
+
+	&__pattern {
+		position: absolute;
+
+		&[data-screen='desktop'] {
+			display: none;
+		}
+
+		&--left {
+			left: 0;
+			top: -2.8rem;
+			z-index: -5;
+			@include mxn.mq(xsmall) {
+				top: 20rem;
+
+				&[data-screen='mobile'] {
+					display: none;
+				}
+				&[data-screen='desktop'] {
+					display: block;
+				}
+			}
+			@include mxn.mq(medium) {
+				top: 55%;
+			}
+		}
+
+		&--right {
+			right: 0;
+			top: 82.5%;
+			z-index: -4;
+			@include mxn.mq(medium) {
+				top: -8rem;
+				z-index: 1;
+
+				&[data-screen='mobile'] {
+					display: none;
+				}
+				&[data-screen='desktop'] {
+					display: block;
+				}
+			}
 		}
 	}
 }

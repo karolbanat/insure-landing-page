@@ -3,6 +3,7 @@
 .primary-navigation {
 	position: relative;
 	padding-block: var(--spacer-rem-200);
+	background-color: var(--clr-neutral-100);
 	z-index: 9999;
 	@include mxn.mq(medium) {
 		padding-block: var(--spacer-rem-150);
