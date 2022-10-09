@@ -1,0 +1,8 @@
+@use '../abstracts/mixins' as mxn;
+
+.flex-space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: var(--flex-space-between-spacer, 1em);
+}

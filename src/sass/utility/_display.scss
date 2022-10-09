@@ -1,0 +1,7 @@
+@use '../abstracts/mixins' as mxn;
+
+.display-medium-none {
+	@include mxn.mq(medium) {
+		display: none;
+	}
+}

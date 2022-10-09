@@ -4,6 +4,10 @@
 	border: none;
 	cursor: pointer;
 
+	& > * {
+		pointer-events: none;
+	}
+
 	&[aria-expanded='false'] &__icon-close {
 		display: none;
 	}
