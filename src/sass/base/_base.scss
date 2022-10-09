@@ -1,9 +1,18 @@
+@use '../abstracts/mixins' as mxn;
+
 body {
 	font-family: var(--ff-primary);
 	font-size: var(--fz-400);
 	font-weight: var(--fw-400);
 	color: var(--clr-neutral-700);
 	overflow-x: hidden;
+
+	&.nav-overflow-hidden {
+		overflow-y: hidden;
+		@include mxn.mq(medium) {
+			overflow-y: visible;
+		}
+	}
 }
 
 h1,

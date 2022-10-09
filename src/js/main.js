@@ -15,7 +15,9 @@ const handleToggleButton = e => {
 };
 
 const toggleBodyVerticalScroll = isExpanded => {
-	document.body.style.overflowY = isExpanded ? 'hidden' : 'visible';
+	isExpanded
+		? document.body.classList.add('nav-overflow-hidden')
+		: document.body.classList.remove('nav-overflow-hidden');
 };
 
 toggleButton.addEventListener('click', handleToggleButton);
