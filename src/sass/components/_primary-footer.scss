@@ -2,6 +2,13 @@
 
 .primary-footer {
 	padding-block: var(--footer-block-padding);
+	background-image: url('../images/bg-pattern-footer-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	@include mxn.mq(medium) {
+		background-image: url('../images/bg-pattern-footer-desktop.svg');
+		background-size: auto;
+	}
 
 	&__nav-heading {
 		margin-bottom: var(--spacer-rem-350);
