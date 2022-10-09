@@ -1,0 +1,46 @@
+@use '../../abstracts/mixins' as mxn;
+
+.button {
+	display: inline-block;
+	/* spacing */
+	padding-block: var(--spacer-em-300);
+	padding-inline: var(--spacer-em-600);
+	/* typography */
+	font-weight: var(--fw-700);
+	font-size: var(--fz-300);
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1;
+	color: var(--text-button, black);
+	/* appearance */
+	background: var(--bg-button, transparent);
+	border: 2px solid var(--border-button, black);
+	cursor: pointer;
+	transition: color 0.35s ease, background-color 0.35s ease;
+
+	&:hover,
+	&:focus {
+		--bg-button: var(--bg-hover-button, inherit);
+		--text-button: var(--text-hover-button, inherit);
+	}
+
+	&--nav {
+		--text-button: var(--clr-neutral-100);
+		--text-hover-button: var(--clr-neutral-100);
+		--border-button: var(--clr-neutral-100);
+		--bg-hover-button: var(--clr-neutral-700);
+		font-size: var(--fz-nav-link);
+		@include mxn.mq(medium) {
+			--text-button: var(--clr-neutral-700);
+			--border-button: var(--clr-neutral-700);
+		}
+	}
+
+	&--light {
+		--text-button: var(--clr-neutral-100);
+		--text-hover-button: var(--clr-primary-700);
+		--border-button: var(--clr-neutral-100);
+		--bg-hover-button: var(--clr-neutral-100);
+	}
+}

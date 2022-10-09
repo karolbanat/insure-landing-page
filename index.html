@@ -18,24 +18,26 @@
 <body>
 
   <header class="primary-header">
-    <div class="container">
-      <nav class="primary-navigation">
-        <a aria-label="Home page" href="#"><img src="./dist/images/logo.svg" alt="Insure"></a>
-        <button aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false" data-target="#primary-nav"
-                class="toggle-button">
-          <img src="./dist/images/icon-hamburger.svg" alt="" class="toggle-button__icon-open">
-          <img src="./dist/images/icon-close.svg" alt="" class="toggle-button__icon-close">
-        </button>
-        <div id="primary-nav" class="primary-navigation__nav">
-          <ul class="primary-navigation__nav-list">
-            <li><a href="#" class="nav-link">How we work</a></li>
-            <li><a href="#" class="nav-link">Blog</a></li>
-            <li><a href="#" class="nav-link">Account</a></li>
-          </ul>
-          <a href="#" class="button button--dark">View plans</a>
-        </div> <!-- Primary nav end-->
-      </nav> <!-- Primary navigation end -->
-    </div>
+    <nav class="primary-navigation">
+      <div class="container">
+        <div class="flex-space-between">
+          <a aria-label="Home page" href="#"><img src="./dist/images/logo.svg" alt="Insure"></a>
+          <button aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false" data-target="#primary-nav"
+                  class="toggle-button">
+            <img src="./dist/images/icon-hamburger.svg" alt="" class="toggle-button__icon-open">
+            <img src="./dist/images/icon-close.svg" alt="" class="toggle-button__icon-close">
+          </button>
+          <div id="primary-nav" class="primary-navigation__nav">
+            <ul class="primary-navigation__nav-list">
+              <li><a href="#" class="nav-link">How we work</a></li>
+              <li><a href="#" class="nav-link">Blog</a></li>
+              <li><a href="#" class="nav-link">Account</a></li>
+            </ul>
+            <a href="#" class="button button--nav">View plans</a>
+          </div> <!-- Primary nav end-->
+        </div> <!-- Flex space between end -->
+      </div> <!-- Container end -->
+    </nav> <!-- Primary navigation end -->
     <div class="primary-header__intro | text-center-sm text-neutral-100 bg-primary-700">
       <div class="container container--not-spaced">
         <picture>
