@@ -1,0 +1,13 @@
+@use '../abstracts/mixins' as mxn;
+
+.content-divider {
+	margin-block-start: var(--spacer-rem-400);
+	margin-block-end: var(--spacer-rem-400);
+	height: 1px;
+	background-color: var(--clr-neutral-300);
+	border: none;
+	@include mxn.mq(medium) {
+		margin-block-start: var(--spacer-rem-350);
+		margin-block-end: var(--spacer-rem-500);
+	}
+}

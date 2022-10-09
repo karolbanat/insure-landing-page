@@ -44,14 +44,14 @@
 	--section-heading-margin: var(--spacer-em-500);
 	--section-block-spacer: 14rem;
 	--cta-padding-inline: clamp(var(--spacer-rem-200, 1em), 5vw, var(--spacer-rem-900, 4em));
-	--footer-block-padding: 8.8rem;
 	--features-grid-gap: var(--spacer-rem-600);
+	--footer-block-padding: 8.8rem;
 	--footer-nav-grid-gap: var(--spacer-rem-400);
 	@include mixins.mq(medium) {
 		--section-heading-margin: var(--spacer-em-400);
 		--section-block-spacer: 15rem;
-		--footer-block-padding: 6.4rem;
 		--features-grid-gap: var(--spacer-rem-250);
+		--footer-block-padding: 6.4rem;
 		--footer-nav-grid-gap: var(--spacer-rem-250);
 	}
 }

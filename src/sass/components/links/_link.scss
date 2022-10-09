@@ -1,0 +1,15 @@
+.link {
+	display: inline-block;
+	font-weight: var(--fw-700);
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 1.5px;
+	color: var(--clr-neutral-700);
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

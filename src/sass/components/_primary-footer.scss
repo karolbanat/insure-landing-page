@@ -1,0 +1,20 @@
+@use '../abstracts/mixins' as mxn;
+
+.primary-footer {
+	padding-block: var(--footer-block-padding);
+
+	&__nav-heading {
+		margin-bottom: var(--spacer-rem-350);
+		font-weight: var(--fw-700);
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		line-height: 1;
+		color: var(--clr-neutral-400);
+	}
+
+	&__links-list {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacer-em-300);
+	}
+}
