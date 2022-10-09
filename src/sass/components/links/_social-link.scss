@@ -1,0 +1,11 @@
+.social-link {
+	cursor: pointer;
+	transition: filter 0.35s ease;
+
+	&:hover,
+	&:focus {
+		// generated thanks to: https://angel-rs.github.io/css-color-filter-generator/
+		filter: brightness(0) saturate(100%) invert(11%) sepia(12%) saturate(765%) hue-rotate(227deg) brightness(97%)
+			contrast(87%);
+	}
+}
