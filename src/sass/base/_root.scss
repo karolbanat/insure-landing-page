@@ -40,6 +40,7 @@
 		}
 	}
 
+	--container-padding-inline: clamp(var(--spacer-rem-200, 1em), 5vw, var(--spacer-rem-900, 4em));
 	--section-block-spacer: 14rem;
 	--footer-block-padding: 8.8rem;
 	@include mixins.mq(medium) {

@@ -6,3 +6,15 @@
 	align-items: center;
 	gap: var(--flex-space-between-spacer, 1em);
 }
+
+.primary-header-flex {
+	display: flex;
+	flex-direction: column;
+	@include mxn.mq(medium) {
+		flex-direction: row-reverse;
+		gap: var(--spacer-rem-250);
+		& > * {
+			flex-basis: 50%;
+		}
+	}
+}

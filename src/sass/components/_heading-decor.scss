@@ -1,0 +1,35 @@
+@use '../abstracts/mixins' as mxn;
+
+.heading-decor {
+	--decor-spacer: var(--spacer-rem-400);
+	&::before {
+		content: '';
+		display: block;
+		width: var(--decor-width, 15rem);
+		height: 1px;
+		background-color: var(--decor-color, white);
+		margin-block-end: var(--decor-spacer, 2rem);
+		margin-inline: auto;
+		@include mxn.mq(medium) {
+			--decor-spacer: var(--spacer-rem-700);
+			margin-inline: unset;
+		}
+	}
+
+	&[data-breakpoint-decored='large'] {
+		&::before {
+			display: none;
+			@include mxn.mq(large) {
+				display: block;
+			}
+		}
+	}
+
+	&--light {
+		--decor-color: var(--clr-neutral-100);
+	}
+
+	&--accent {
+		--decor-color: var(--clr-accent-400);
+	}
+}

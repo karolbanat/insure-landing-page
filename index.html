@@ -38,18 +38,24 @@
         </div> <!-- Flex space between end -->
       </div> <!-- Container end -->
     </nav> <!-- Primary navigation end -->
-    <div class="primary-header__intro | text-center-sm text-neutral-100 bg-primary-700">
+
+    <div class="primary-header__intro | text-center-sm text-neutral-100">
       <div class="container container--not-spaced">
-        <picture>
-          <source media="(min-width: 800px)" srcset="./dist/images/image-intro-desktop.jpg">
-          <img src="./dist/images/image-intro-mobile.jpg" alt="Four people family holding hands and going in a line.">
-        </picture>
-        <div class="primary-header__text-content">
-          <h1 class="primary-header__heading">Humanizing your insurance.</h1>
-          <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find
-            the plan that’s right for you. Ensure you and your loved ones are protected.
-          </p>
-          <a href="#" class="button button--light">View plans</a>
+        <div class="primary-header-flex">
+          <picture>
+            <source media="(min-width: 800px)" srcset="./dist/images/image-intro-desktop.jpg">
+            <img src="./dist/images/image-intro-mobile.jpg" alt="Four people family holding hands and going in a line."
+                 class="mx-auto">
+          </picture>
+          <div class="primary-header__text-content | flow">
+            <h1 data-breakpoint-decored="large" class="heading heading--large heading-decor heading-decor--light">
+              Humanizing<br> your insurance.</h1>
+            <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you
+              find
+              the plan that’s right for you. Ensure you and your loved ones are protected.
+            </p>
+            <a href="#" class="button button--light | margin-block-start-header-button">View plans</a>
+          </div>
         </div>
       </div> <!-- Container end -->
     </div> <!-- Primary header intro end -->
@@ -58,7 +64,8 @@
   <main>
     <div class="container">
       <section class="section-spacer text-center-sm">
-        <h2 class="heading heading--large">We’re different</h2>
+        <h2 data-breakpoint-decored="small" class="heading heading--large heading-decor heading-decor--accent">We’re
+          different</h2>
         <ul class="even-column">
           <li class="card">
             <img src="./dist/images/icon-snappy-process.svg" alt="">

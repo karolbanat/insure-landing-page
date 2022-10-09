@@ -1,0 +1,9 @@
+.heading {
+	&--medium {
+		font-size: var(--fz-600);
+	}
+
+	&--large {
+		font-size: var(--fz-700);
+	}
+}

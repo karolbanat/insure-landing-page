@@ -10,6 +10,9 @@ $colors: (
 		400: hsl(216 30% 68%),
 		700: hsl(256 26% 20%),
 	),
+	accent: (
+		400: hsl(296 30% 68%),
+	),
 	neutral: (
 		100: hsl(0 0% 100%),
 		200: hsl(0 0% 98%),
@@ -28,9 +31,11 @@ $font-sizes: (
 		nav-link: 2rem,
 	),
 	medium: (
+		nav-link: 1.3rem,
+	),
+	large: (
 		600: 4.8rem,
 		700: 7.2rem,
-		nav-link: 1.3rem,
 	),
 );
 
@@ -58,5 +63,6 @@ $spacers: (
 		700: 6.4rem,
 		800: 7.2rem,
 		900: 8rem,
+		950: 9.4rem,
 	),
 );

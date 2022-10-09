@@ -1,0 +1,16 @@
+@use '../abstracts/mixins' as mxn;
+
+.mx-auto {
+	margin-inline: auto;
+}
+
+.margin-block-start-header-button {
+	margin-block-start: var(--spacer-rem-200, 1em);
+	@include mxn.mq(medium) {
+		margin-block-start: var(--spacer-rem-300, 1em);
+	}
+}
+
+.section-spacer {
+	margin-block: var(--section-block-spacer, 10rem);
+}
