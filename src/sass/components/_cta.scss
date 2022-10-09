@@ -1,0 +1,13 @@
+@use '../abstracts/mixins' as mxn;
+
+.cta {
+	padding-block: var(--spacer-rem-800);
+	padding-inline: var(--cta-padding-inline);
+	/* background pattern */
+	background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	@include mxn.mq(medium) {
+		background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+	}
+}
