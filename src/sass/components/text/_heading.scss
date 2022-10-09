@@ -6,4 +6,8 @@
 	&--large {
 		font-size: var(--fz-700);
 	}
+
+	&--limited {
+		max-width: 17ch;
+	}
 }
