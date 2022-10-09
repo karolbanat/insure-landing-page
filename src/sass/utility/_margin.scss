@@ -14,3 +14,7 @@
 .section-spacer {
 	margin-block: var(--section-block-spacer, 10rem);
 }
+
+.section-heading-margin {
+	margin-block-end: var(--section-heading-margin);
+}

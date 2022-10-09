@@ -1,0 +1,17 @@
+@use '../abstracts/mixins' as mxn;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--spacer-rem-300, 1em);
+	@include mxn.mq(medium) {
+		align-items: flex-start;
+	}
+
+	&__heading {
+		margin-block-end: var(--spacer-rem-100);
+		font-size: var(--fz-500);
+		letter-spacing: -0.4px;
+	}
+}

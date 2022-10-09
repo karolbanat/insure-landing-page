@@ -1,14 +1,16 @@
 @use '../abstracts/mixins' as mxn;
 
-.flex-space-between {
+[class*='flex'] {
 	display: flex;
+}
+
+.flex-space-between {
 	justify-content: space-between;
 	align-items: center;
 	gap: var(--flex-space-between-spacer, 1em);
 }
 
 .primary-header-flex {
-	display: flex;
 	flex-direction: column;
 	@include mxn.mq(medium) {
 		flex-direction: row-reverse;

@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as mxn;
+
+.even-columns {
+	display: grid;
+	gap: var(--even-columns-spacer, 1em);
+	grid-template-columns: repeat(auto-fit, minmax(var(--column-width, 25rem), 1fr));
+}
+
+.features-gap {
+	gap: var(--features-grid-gap, 1em);
+}
+
+.footer-nav-gap {
+	gap: var(--footer-nav-grid-gap, 1em);
+}
